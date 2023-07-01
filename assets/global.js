@@ -975,12 +975,16 @@ class VariantSelects extends HTMLElement {
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
       this.setUnavailable();
+      // code pour rendre le bouton klaviyo disponilbe
+      document.querySelector('.klaviyo-bis-trigger').style.display = "block";
     } else {
       this.updateMedia();
       this.updateURL();
       this.updateVariantInput();
       this.renderProductInfo();
       this.updateShareUrl();
+      // code pour rendre le bouton klaviyo masqué
+      document.querySelector('.klaviyo-bis-trigger').style.display = "none";
     }
   }
 
