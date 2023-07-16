@@ -9,25 +9,55 @@
           "type": "announcement",
           "settings": {
             "text": "Welcome to our store",
-            "text_alignment": "center",
-            "color_scheme": "background-1",
+            "link": ""
+          }
+        },
+        "d4e614bb-becf-44ee-8ff7-d02d3dcb9c6d": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        },
+        "854fcc65-58ea-4cc3-9d62-c123f5611e6f": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        },
+        "e5f87966-b3a5-4259-b6eb-977ae4b10d06": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
-      ]
+        "announcement-bar-0",
+        "d4e614bb-becf-44ee-8ff7-d02d3dcb9c6d",
+        "854fcc65-58ea-4cc3-9d62-c123f5611e6f",
+        "e5f87966-b3a5-4259-b6eb-977ae4b10d06"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5
+      }
     },
     "header": {
       "type": "header",
       "settings": {
-        "color_scheme": "background-1",
         "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
+        "color_scheme": "background-1",
+        "menu_color_scheme": "",
         "enable_country_selector": true,
         "enable_language_selector": true,
         "mobile_logo_position": "center",
