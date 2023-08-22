@@ -218,9 +218,10 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
+            "icon": "banana",
+            "row_content": "<p>1 an de garantie si vous achetez cette paire de ski.<\/p>",
+            "page": "",
+            "image": "shopify:\/\/shop_images\/1-year-warranty-free-png.webp"
           }
         },
         "template--19759112585519__c1886cfe-5ce5-486d-92f7-53a132147a39-collapsible_row-2": {
