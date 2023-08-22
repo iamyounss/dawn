@@ -63,8 +63,8 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "",
+            "icon": "none",
+            "content": "<p>Je suis le contenu auquel sera attaché une image. <\/p>",
             "page": ""
           }
         },
