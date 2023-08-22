@@ -94,12 +94,14 @@
                     role="region"
                     aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
                   >
-                    {{ block.settings.row_content }}
-                    {{ block.settings.page.content }}
 
                     {% if block.settings.image != blank %}
                         <img src="{{ block.settings.image | image_url: width: 100, height: 100 }}" loading="lazy">
                     {% endif  %}
+                    {{ block.settings.row_content }}
+                    {{ block.settings.page.content }}
+
+          
                   </div>
                 </details>
               </div>
