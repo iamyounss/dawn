@@ -60,6 +60,24 @@
                 </div>
                 
                 <button class="button button--primary button--show-more">Voir plus</button>
+
+                <script>
+                  const showMoreContent = document.querySelector('.rich-text__show-more');
+                  const showLessContent = document.querySelector('.rich-text__show-less');
+                  const buttonShowMore  = document.querySelector('.button--show-more');
+
+                  buttonShowMore.addEventListener('click', function () {
+                    if(showMoreContent) {  
+                      showMoreContent.style.display = "block";
+                    }
+                    if(showLessContent) {  
+                      showLessContent.style.display = "none";
+                    }
+                  });
+
+                  
+                  
+                </script>
                 
               </div>
             {%- when 'button' -%}
