@@ -51,7 +51,7 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                <div class="rich-text__show-less">
+                <div class="rich-text__show-less" style="display: block">
                   {{ block.settings.text | truncate: block.settings.truncate_number }}
                 </div>
 
