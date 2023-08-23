@@ -51,7 +51,7 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                {{ block.settings.text | truncate: 200 }}
+                {{ block.settings.text | truncate: block.settings.truncate_number }}
               </div>
             {%- when 'button' -%}
               <div
@@ -278,6 +278,12 @@
           "id": "text",
           "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
           "label": "t:sections.rich-text.blocks.text.settings.text.label"
+        },
+        {
+          "type": "number",
+          "id": "truncate_number",
+          "label": "Limite de caractère a voir",
+          "default": 200
         }
       ]
     },
