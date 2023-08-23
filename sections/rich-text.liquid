@@ -67,17 +67,18 @@
                   const buttonShowMore  = document.querySelector('.button--show-more');
 
                   buttonShowMore.addEventListener('click', function () {
-                    if(showMoreContent && showMoreContent.style.display = "none") {  
+                    if(showMoreContent && showMoreContent.style.display == "none") {  
                       showMoreContent.style.display = "block";
                     } else {
                        showMoreContent.style.display = "none";
                     }
                     
-                   if(showLessContent && showLessContent.style.display = "none") {  
+                   if(showLessContent && showLessContent.style.display == "none") {  
                       showLessContent.style.display = "block";
                     } else {
                        showLessContent.style.display = "none";
                     }
+                    
                   });
 
                   
