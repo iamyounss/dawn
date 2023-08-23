@@ -51,7 +51,16 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
-                {{ block.settings.text | truncate: block.settings.truncate_number }}
+                <div class="rich-text__show-less">
+                  {{ block.settings.text | truncate: block.settings.truncate_number }}
+                </div>
+
+                <div class="rich-text__show-more" style="display: none">  
+                  {{ block.settings.text }}
+                </div>
+                
+                <button class="button button--primary button--show-more">Voir plus</button>
+                
               </div>
             {%- when 'button' -%}
               <div
