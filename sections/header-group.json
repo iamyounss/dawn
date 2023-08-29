@@ -9,7 +9,8 @@
           "type": "announcement",
           "settings": {
             "text": "Welcome to our store",
-            "link": "shopify:\/\/collections\/hydrogen"
+            "link": "shopify:\/\/collections\/hydrogen",
+            "lien_obfuscer": true
           }
         }
       },

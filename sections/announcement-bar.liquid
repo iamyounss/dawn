@@ -26,7 +26,7 @@
         {%- if section.blocks.first.settings.text != blank -%}
             {%- if section.blocks.first.settings.link != blank -%}
               {%- if section.blocks.first.settings.lien_obfuscer == true -%}
-                  quelque chose
+                  <span class="announcement-bar__link link link--text focus-inset animate-arrow" data-obfusced-link="{{ section.blocks.first.settings.link }}">
               {%- else -%}
                 <a
                   href="{{ section.blocks.first.settings.link }}"
@@ -41,7 +41,11 @@
             {%- endif -%}
           </p>
           {%- if section.blocks.first.settings.link != blank -%}
-            </a>
+             {%- if section.blocks.first.settings.lien_obfuscer == true -%}
+                </span>
+             {% else %}
+                </a>
+             {% endif  %}
           {%- endif -%}
         {%- endif -%}
       </div>
