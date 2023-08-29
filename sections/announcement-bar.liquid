@@ -24,14 +24,18 @@
         {{ block.shopify_attributes }}
       >
         {%- if section.blocks.first.settings.text != blank -%}
-          {%- if section.blocks.first.settings.link != blank -%}
-            <a
-              href="{{ section.blocks.first.settings.link }}"
-              class="announcement-bar__link link link--text focus-inset animate-arrow"
-            >
+            {%- if section.blocks.first.settings.link != blank -%}
+              {%- if section.blocks.first.settings.lien_obfuscer == true -%}
+                  quelque chose
+              {%- else -%}
+                <a
+                  href="{{ section.blocks.first.settings.link }}"
+                  class="announcement-bar__link link link--text focus-inset animate-arrow"
+                >
+              {% endif %}
           {%- endif -%}
           <p class="announcement-bar__message h5">
-            <span>{{ section.blocks.first.settings.text | escape }}</span> caca
+            <span>{{ section.blocks.first.settings.text | escape }}</span>
             {%- if section.blocks.first.settings.link != blank -%}
               {% render 'icon-arrow' %}
             {%- endif -%}
@@ -90,7 +94,7 @@
                       >
                     {%- endif -%}
                     <p class="announcement-bar__message h5">
-                      <span>{{ block.settings.text | escape }} kiki</span>
+                      <span>{{ block.settings.text | escape }}</span>
                       {%- if block.settings.link != blank -%}
                         {% render 'icon-arrow' %}
                       {%- endif -%}
@@ -186,6 +190,12 @@
           "type": "url",
           "id": "link",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.link.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "lien_obfuscer",
+          "label": "Obfusquer le lien ?",
+          "default": false
         }
       ]
     }
