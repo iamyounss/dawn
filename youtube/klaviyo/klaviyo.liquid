@@ -40,4 +40,11 @@
   });
 </script>
 
-<a class="klaviyo-bis-trigger button button--full-width" href="#">Prévenez-moi de son retour</a>
+<a
+  {% if product.selected_or_first_available_variant.available == true %}
+    style="display:none"
+  {% endif %}
+  class="klaviyo-bis-trigger button button--full-width"
+  href="#"
+  >Prévenez-moi de son retour</a
+>
